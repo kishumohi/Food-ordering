@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
+import MobileNav from "./MobileNav";
 
 function Header() {
   return (
@@ -8,6 +9,9 @@ function Header() {
         <Link to="/" className="text-3xl font-bold tracking-tight text-orange-500">
           MernEats.com
         </Link>
+        <div className="md:hidden">
+          <MobileNav />
+        </div>
       </div>
     </div>
   );
